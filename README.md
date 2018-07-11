@@ -2,10 +2,9 @@
 > A Vue.js project, based on [webpack vuejs-template](https://github.com/vuejs-templates/webpack)
 
 All is pre-ready for start coding - this template include simple blog-app with Django & Django REST framework on backend
-and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of html template and
- [bemto.pug](https://github.com/kizu/bemto) - simple mixines that eneble use BEM-notation in Vue templates.
+and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of html template.
 
-Summary, it include:
+Summary, it include: 
 1. Simple Django project (business)card with app (posts) 
 2. Model Post with Serializer and all settings for Django REST Framework and Django CORS headers
 3. (it will be changed!) Basic Hello World Vue.js App from [webpack vuejs-template](https://github.com/vuejs-templates/webpack)
