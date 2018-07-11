@@ -1,12 +1,17 @@
-# business_card
-
-> A Vue.js project
+# Vue.js & Django project template
+> A Vue.js project, based on [webpack vuejs-template](https://github.com/vuejs-templates/webpack)
 
 ## Build Setup
 
 ``` bash
+# creat virtualenv for django
+virtualenv project_name
+cd project_name
+
 # install dependencies
 npm install
+pip install -r requirements.txt
+
 
 # serve with hot reload at localhost:8080
 npm run dev
