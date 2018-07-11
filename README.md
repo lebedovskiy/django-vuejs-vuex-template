@@ -5,9 +5,9 @@ All is pre-ready for start coding - this template include simple blog-app with D
 and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of html template.
 
 Summary, it include: 
-1. Simple Django project (business)card with app (posts) 
-2. Model Post with Serializer and all settings for Django REST Framework and Django CORS headers
-3. (it will be changed!) Basic Hello World Vue.js App from [webpack vuejs-template](https://github.com/vuejs-templates/webpack)
+1. Simple Django project (business_card) with app (posts).
+2. Model Post with Serializer and all settings for Django REST Framework and Django CORS headers.
+3. (it will be changed!) Basic Hello World Vue.js App from [webpack vuejs-template.](https://github.com/vuejs-templates/webpack)
 
 ## Build Setup
 
@@ -25,7 +25,7 @@ npm install
 pip install -r requirements.txt
 
 ```
-Now you can run develop or production mod: 
+Now you can run develop or production mode: 
 
 ``` bash
 # serve with hot reload at localhost:8080
