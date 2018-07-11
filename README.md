@@ -12,15 +12,22 @@ Summary, it include:
 ## Build Setup
 
 ``` bash
+
+# clone this repo
+git clone https://github.com/lebedovskiy/django-vuejs-vuex-template.git
+cd django-vuejs-vuex-template
+
 # creat virtualenv for django
-virtualenv project_name
-cd project_name
+virtualenv .
 
 # install dependencies
 npm install
 pip install -r requirements.txt
 
+```
+Now you can run develop or production mod: 
 
+``` bash
 # serve with hot reload at localhost:8080
 npm run dev
 
