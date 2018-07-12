@@ -1,10 +1,10 @@
 <template>
   <div class="app">
-    <div v-for="post in posts" :key="post.id">
+    <div v-for="post in posts" :key="post.id" class="post">
       <div class="post__author">{{post.author}}</div>
       <div class="created">{{post.created_date}}</div>
-      <div class="post__title">{{post.title}}</div>
-      <div class="post__text">{{post.text}}</div>
+      <h2 class="post__title">{{post.title}}</h2>
+      <p class="post__text">{{post.text}}</p>
     </div>
   </div>
 </template>
