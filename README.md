@@ -7,7 +7,8 @@ and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of 
 Summary, it include: 
 1. Simple Django project (business_card) with app (posts).
 2. Model Post with Serializer and all settings for Django REST Framework and Django CORS headers.
-3. (it will be changed!) Basic Hello World Vue.js App from [webpack vuejs-template.](https://github.com/vuejs-templates/webpack)
+3. [Webpack vuejs-template](https://github.com/vuejs-templates/webpack) with Pug/Jade, Axios, Vuex and vue-router.
+4. Views for post from axios (from REST Framework).
 
 ## Build Setup
 
