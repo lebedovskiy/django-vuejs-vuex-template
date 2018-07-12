@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="app">
     <div v-for="post in posts" :key="post.id">
       <div class="post__author">{{post.author}}</div>
       <div class="created">{{post.created_date}}</div>
