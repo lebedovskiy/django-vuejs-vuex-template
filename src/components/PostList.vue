@@ -1,12 +1,10 @@
-<template>
-  <div class="app">
-    <div v-for="post in posts" :key="post.id" class="post">
-      <div class="post__author">{{post.author}}</div>
-      <div class="created">{{post.created_date}}</div>
-      <h2 class="post__title">{{post.title}}</h2>
-      <p class="post__text">{{post.text}}</p>
-    </div>
-  </div>
+<template lang="pug">
+  #app
+   div(class='post' v-for="post in posts" :key="post.id")
+      .post__author {{post.author}}
+      .created {{post.created_date}}
+      h2.post__title {{post.title}}
+      p.post__text {{post.text}}
 </template>
 
 <script>
@@ -41,5 +39,8 @@ li {
 }
 a {
   color: #42b983;
+}
+p{
+  line-height: 1.5;
 }
 </style>
