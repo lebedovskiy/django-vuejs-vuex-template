@@ -9,6 +9,6 @@ class PostViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows Posts to be viewed or edited.
     """
-    queryset = Post.objects.all().order_by('-published_date')
+    queryset = Post.objects.all().order_by('published_date')
     post = Post.objects.get(id=1)
     serializer_class = PostSerializer
