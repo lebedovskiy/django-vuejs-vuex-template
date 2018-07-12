@@ -19,7 +19,7 @@ git clone https://github.com/lebedovskiy/django-vuejs-vuex-template.git
 cd django-vuejs-vuex-template
 
 # creat virtualenv for django
-virtualenv .
+virtualenv venv
 
 # install dependencies
 npm install
