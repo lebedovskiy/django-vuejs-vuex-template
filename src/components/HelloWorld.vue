@@ -1,30 +1,27 @@
 <template>
   <div id="app">
-    <div class="post">{{posts.author}}</div>
-      <div class="post__title">{{posts.title}}</div>
-      <div class="post__text">{{posts.text}}</div>
-
+    <div v-for="post in posts" :key="post.id">
+      <div class="post__author">{{post.author}}</div>
+      <div class="created">{{post.created_date}}</div>
+      <div class="post__title">{{post.title}}</div>
+      <div class="post__text">{{post.text}}</div>
+    </div>
   </div>
 </template>
 
 <script>
-// TODO: разобратьс с объектом/массивом posts! Почему он массив объектов?
-// Что правильнее - научить джанго отдавать посты по одному или разгребать массив объектов через vue
 import {HTTP} from '../api/common'
 export default {
   name: 'HelloWorld',
   data () {
     return {
-      posts: [],
-      author: [],
-      title: [],
-      text: []
+      posts: []
     }
   },
   mounted () {
     HTTP
       .get('posts')
-      .then(response => (this.posts = response.data[0]))
+      .then(response => (this.posts = response.data))
   }
 }
 </script>
