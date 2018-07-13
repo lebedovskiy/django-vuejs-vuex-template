@@ -2,7 +2,7 @@
 > A Vue.js + Django project, based on [webpack vuejs-template](https://github.com/vuejs-templates/webpack)
 
 All is pre-ready for start coding - this template include simple blog-app with Django & Django REST framework on backend
-and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of html template and SCSS support for styles.
+and Vue.js & Vuex & Vue-router on frontend. Also I add Pug (Jade) - language of html template and Stylus support for styles.
 
 Summary, it include: 
 1. Simple Django project (business_card) with app (posts).

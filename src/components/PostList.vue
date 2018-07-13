@@ -26,14 +26,13 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
-.post__title {
-  font-weight: normal;
-}
-.post__text{
-  line-height: 1.5;
-}
-.post__author{
-  margin: 1em;
-}
+<style  lang="stylus">
+.post__title
+  font-weight: normal
+
+.post__text
+  line-height: 1.5
+
+.post__author
+  margin: 1em
 </style>
