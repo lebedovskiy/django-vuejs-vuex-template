@@ -1,16 +1,19 @@
 <template lang="pug">
   .app
     Menu
-    PostList
+    right-side
+    left-side
 </template>
 
 <script>
 import Menu from './components/Menu'
-import PostList from './components/PostList'
+import LeftSide from './components/LeftSide'
+import RightSide from './components/RightSide'
 export default {
   name: 'App',
   components: {
-    PostList,
+    RightSide,
+    LeftSide,
     Menu
   }
 }
