@@ -27,12 +27,14 @@ export default {
 
 <style  lang="stylus">
 .postlist
-  margin 20px 10px
-  width 60%
+  margin 10px
+  margin-top 50px
+  padding 5px 0
+  width 90%
   float left
 
 .post__title
-  font-weight: normal
+  font-weight: bold
 
 .post__text
   line-height: 1.5

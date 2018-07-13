@@ -1,7 +1,8 @@
 <template lang="pug">
   .app
     .header
-      router-link(to='/').logo L
+      router-link(to='/').logo
+        img(src='./assets/logo.svg')
       router-link(to='/blog', v-bind:class="{ mobile: isMobile }").menu__item Блог
       router-link(to='/resume', v-bind:class="{ mobile: isMobile }").menu__item Резюме
       router-link(to='/write_me', v-bind:class="{ mobile: isMobile }").menu__item Написать мне
@@ -28,33 +29,36 @@ export default {
 <style lang="stylus">
 .header
   background #0067AA
-  height 60px
-  width 90%
-  margin 5px
+  height 50px
+  width 100%
   padding 1% 4%
-  border-radius 20px
+  margin 0
+  position fixed
+  top 0
+  left 0
+  right 0
+  text-align left
 
 a
   text-decoration: none;
+
+img
+  float inherit
+
 .logo
-  margin 7px 0
-  height 50px
-  width 50px
-  font-size 2.5em
-  color black
+  margin 0 0
+  height 80px
+  width 80px
 
 .menu__item
-  font-size 1.5em
+  font-size 1em
   margin 10px
-  padding 10px 5px
+  padding 1% 5px
   color black
-  border outset #062DAC 2px
+  border inset #062DAC 2px
   border-radius 15px
   background #37D7AF
-
-.mobile
-  font-size 1em
-  padding: 5px
+  top 40px
 
 .app
   font-family: 'Avenir', Helvetica, Arial, sans-serif
