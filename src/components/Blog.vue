@@ -10,10 +10,10 @@
 <script>
 import {HTTP} from '../api/common'
 export default {
-  name: 'PostList',
+  name: 'Blog',
   data () {
     return {
-      author: 'lebedovskiy',
+      author: 'Lebedovskiy',
       posts: []
     }
   },
@@ -25,10 +25,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style  lang="stylus">
 .postlist
-  margin 0 10px
+  margin 20px 10px
   width 60%
   float left
 
@@ -40,4 +39,5 @@ export default {
 
 .post__author
   margin: 10px 0
+
 </style>
