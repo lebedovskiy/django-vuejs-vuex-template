@@ -1,8 +1,8 @@
 <template lang="pug">
   .app
-   div(class='post' v-for="post in posts" :key="post.id")
+   div(class='post' v-for='post in posts' :key='post.id')
       .post__author {{author}}
-      .created {{post.created_date}}
+      .post__created {{post.created_date}}
       h2.post__title {{post.title}}
       p.post__text {{post.text}}
 </template>
