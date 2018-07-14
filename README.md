@@ -10,8 +10,13 @@ Summary, it include:
 3. [Webpack vuejs-template](https://github.com/vuejs-templates/webpack) with Pug/Jade, SCSS, Axios, Vuex and vue-router.
 4. Views for post list from axios (from REST Framework).
 
-**For usage you must comment string ***router.register(r'posts', views.PostViewSet)*** in /posts/urls.py.
-This string call django exception when you try ***python manage.py makemigrations***** 
+**For usage you must comment string ***router.register(r'posts', views.PostViewSet)*** in /posts/urls.py. Also comment
+***class PostViewSet(viewsets.ModelViewSet):
+    queryset = Post.objects.all().order_by('published_date')
+    post = Post.objects.get(id=1)
+    serializer_class = PostSerializer***
+ in views.py
+This strings call django exception when you try ***python manage.py makemigrations***** 
 
 ## Build Setup
 
