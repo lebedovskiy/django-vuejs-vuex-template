@@ -1,17 +1,14 @@
 <template lang="pug">
-  .main
+.resume
     .presentation
-      h3.presentation__text {{presentation.title}}
-      .presentation__img
-        img(width='100%' src='../assets/1530346884.jpg')
-    p.main__text {{presentation.text}}
+      h2.presentation__text {{presentation.title}}
+      img.presentation__img(width='100%', src='../assets/1530346884.jpg')
 </template>
 
 <script>
 import {HTTP} from '../api/common'
-
 export default {
-  name: 'Main',
+  name: 'Resume',
   data () {
     return {
       presentation: []
@@ -26,7 +23,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  .main
+  .resume
     font-family Bahnschrift
     width 60%
     margin 0 auto
