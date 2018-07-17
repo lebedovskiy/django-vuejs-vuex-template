@@ -2,13 +2,14 @@
 node_modules/
 venv/
 db.sqlite3
-dist/**/*
+dist/
+business_card/__pycache__/
+posts/__pycache__/
+posts/migrations
 
 npm-debug.log*
 
 # Editor directories and files
 .idea
-*/**/*.[pyc]
-posts/migrations
-business_card/__pycache__/
-posts/__pycache__/
+src/components/1.html
+*.[pyc]
