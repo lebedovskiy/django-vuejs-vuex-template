@@ -40,7 +40,7 @@ export default {
     width 60%
     margin 0 auto
     @media screen and (max-width: 996px)
-      width 100%
+      width 95%
 
   .post
     margin 2%

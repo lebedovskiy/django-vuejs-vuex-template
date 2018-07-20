@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(5r6_0uglv--s-!5rsu)oe7u%(c)(l=$g@h*=^bax9+3_@w&51'
+SECRET_KEY = '(5r6_0uglv--s-!5rsu)oe59745632c)(l=$g@h*=^bax9+3_@w&51'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'business_card.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'dist')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -123,6 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "dist/static"),
+]
 
 
 CORS_ORIGIN_ALLOW_ALL = True

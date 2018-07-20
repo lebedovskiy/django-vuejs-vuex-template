@@ -1,10 +1,11 @@
 <template lang="pug">
   .main
     .presentation
-      h3.presentation__text {{presentation.title}}
+      h2.presentation__text {{presentation.title}}
       .presentation__img
-        img(width='100%' src='../assets/1530346884.jpg')
-    p.main__text {{presentation.text}}
+        img(width='100%' src='../assets/main__img.jpg')
+      h3.presentation__subtitle {{presentation.subtitle}}
+      p.main__text {{presentation.text}}
 </template>
 
 <script>
@@ -19,7 +20,7 @@ export default {
   },
   mounted () {
     HTTP
-      .get('posts')
+      .get('main')
       .then(response => (this.presentation = response.data[0]))
   }
 }
@@ -27,29 +28,36 @@ export default {
 
 <style lang="stylus">
   .main
-    font-family Bahnschrift
     width 60%
+    height 100%
     margin 0 auto
     @media screen and (max-width: 996px)
-      width 100%
+      width 95%
 
   .presentation
-    margin 1em
+    margin 1%
     overflow auto
 
   .presentation__text
     @media screen and (orientation: landscape)
       float left
       margin 1%
-      width 49%
+      width 48%
+
+  .presentation__subtitle
+    @media screen and (orientation: landscape)
+      float left
+      margin 1%
+      width 48%
 
   .presentation__img
     @media screen and (orientation: landscape)
       float right
-      width 49%
+      margin 1%
+      width 48%
 
   .main__text
-    margin 2%
-    padding 0 1%
-    width 95%
+    @media screen and (orientation: landscape)
+      margin 1%
+      width 44%
 </style>

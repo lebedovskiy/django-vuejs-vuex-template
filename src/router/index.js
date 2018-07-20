@@ -19,11 +19,6 @@ export default new Router({
       path: '/resume',
       name: 'resume',
       component: require('../components/Resume.vue').default
-    },
-    {
-      path: '/write_me',
-      name: 'write_me',
-      component: require('../components/WriteMe.vue').default
     }
   ]
 })

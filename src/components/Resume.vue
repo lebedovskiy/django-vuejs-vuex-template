@@ -1,8 +1,18 @@
 <template lang="pug">
 .resume
-    .presentation
-      h2.presentation__text {{presentation.title}}
-      img.presentation__img(width='100%', src='../assets/1530346884.jpg')
+    .header
+      h3.header__title {{resume.title}}
+        .header__phone Телефон: {{resume.phone}}
+        .header__email Эл. почта: {{resume.e_mail}}
+      img.resume__img(width='100%', src='../assets/resume__img.jpg')
+    p.resume__salary Ожидаемая зарплата: {{resume.salary}}
+    p.resume__education Образование: {{resume.education}}
+    p.resume__language Владение языками: {{resume.language}}
+    p.resume__stack Стек: {{resume.stack}}
+    p.resume__skills Навыки: {{resume.skills}}
+    p.resume__text О себе: {{resume.text}}
+    p.resume__link Ссылка на моё резюме на HeadHunter:
+      a(href="https://chelyabinsk.hh.ru/resume/1f2a6d5bff058f24550039ed1f453753373559") https://chelyabinsk.hh.ru/resume/1f2a6d5bff058f24550039ed1f453753373559
 </template>
 
 <script>
@@ -11,42 +21,46 @@ export default {
   name: 'Resume',
   data () {
     return {
-      presentation: []
+      resume: []
     }
   },
   mounted () {
     HTTP
-      .get('posts')
-      .then(response => (this.presentation = response.data[0]))
+      .get('presentation')
+      .then(response => (this.resume = response.data[0]))
   }
 }
 </script>
 
 <style lang="stylus">
   .resume
-    font-family Bahnschrift
     width 60%
     margin 0 auto
+    overflow auto
     @media screen and (max-width: 996px)
-      width 100%
+      width 95%
 
-  .presentation
-    margin 1em
+  .header
+    margin 1em 0
     overflow auto
 
-  .presentation__text
-    @media screen and (orientation: landscape)
-      float left
-      margin 1%
-      width 49%
+ .header__title
+   line-height 1.5
+   overflow auto
+   @media screen and (orientation: landscape)
+    float left
+    margin 1% 0
+    width 49%
 
-  .presentation__img
+ .header__phone
+   float none
+
+  .resume__img
     @media screen and (orientation: landscape)
       float right
       width 49%
 
-  .main__text
-    margin 2%
-    padding 0 1%
+  .resume__text
     width 95%
+    line-height 1.2
 </style>
